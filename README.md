@@ -18,14 +18,14 @@ The project is organized into four main directories. Each directory contains sel
 
 - [Visual_Perception_Picking/](Visual_Perception_Picking/): This module processes camera input to identify pickable colonies. It performs optical calibration, parses segmentation masks, evaluates colony quality (features), and executes a PID-controlled picking sequence.
 
-- [Model_Training/](Model_Training/): This script handles the training of the YOLOv11-seg model used in Module 3. It is configured for high-resolution input to detect small colonies.
+- [Model_Training/](Model_Training/): This script handles the training of the YOLOv11-seg model used in Module 3. It is configured for high-resolution input to detect small colonies. The large compressed archive Model_Training.zip is available under Release v1.0.0.
 
 ### 1.2. Additional Information
 
 This repository includes the primary datasets supporting the machine learning training and experimental validation described in the manuscript. The data is organized into two main components:
 
 A. Visual Dataset for Deep Learning
-- `YOLO_Training_Dataset.zip/`: A comprehensive collection of approximately ~5,000 high-resolution images capturing microbial plate streaking morphologies on various agar substrates. This dataset was utilized to train, validate, and test the vision-guided robotic system (YOLOv11-seg) for colony instance segmentation. Raw optical images (.jpg, .png) encompassing a wide range of experimental conditions, including dense colony clusters, blurred or overlapping boundaries, and micro-scale colonies.
+- `YOLO_Training_Dataset.zip/`: A comprehensive collection of approximately ~5,000 high-resolution images capturing microbial plate streaking morphologies on various agar substrates. This dataset was utilized to train, validate, and test the vision-guided robotic system (YOLOv11-seg) for colony instance segmentation. Raw optical images (.jpg, .png) encompassing a wide range of experimental conditions, including dense colony clusters, blurred or overlapping boundaries, and micro-scale colonies. The YOLO training dataset is provided as a multi-part archive under Release v1.0.0. Please download all parts named YOLO_Training_Dataset_01, _02, _03, _04.zip, place them in the same directory, and extract starting from the _01 file.
 
 B. Integrated Experimental data Logs
 - `Supplementary_Data_Table.xlsx/`: An aggregated spreadsheet containing source data for robotic performance, environmental sensing, and microbiological analysis. It is structured into ten specific worksheets:
